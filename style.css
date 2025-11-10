@@ -1,0 +1,132 @@
+/* ====== ESTILO GERAL ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+    background-color: #0057b7;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #cce1ff;
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+main {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-top: 30px;
+}
+
+h2 {
+    color: #0057b7;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0057b7;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+p {
+    margin: 10px 0 20px;
+}
+
+/* ====== FORMULÁRIOS ====== */
+form {
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #0057b7;
+    box-shadow: 0 0 5px rgba(0, 87, 183, 0.2);
+}
+
+button {
+    background-color: #0057b7;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #00459a;
+}
+
+/* ====== TABELAS ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0057b7;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
