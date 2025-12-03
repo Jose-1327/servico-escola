@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // 4. Redireciona o usuário com base no tipo
             if ($user_type === 'Secretario' || $user_type === 'Admin') {
-                header("Location: ../alunos.html"); // Redireciona para a tela de gestão de alunos
+                header("Location: ../dashboard.html"); // Redireciona para a tela de gestão de alunos
             } elseif ($user_type === 'Aluno') {
                 header("Location: ../historico.html"); // Redireciona para a tela do aluno
             } else {

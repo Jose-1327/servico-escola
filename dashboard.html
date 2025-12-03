@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Menu Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Controle</h1>
+        <nav>
+            <a href="backend/logout.php" style="color: #ffcccc;">Sair</a> 
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bem-vindo(a) à Área de Gestão</h2>
+        <p>Selecione a área que deseja gerenciar. Todas as páginas possuem as funcionalidades de adicionar, alterar e excluir.</p>
+
+        <!-- GRID DE BOTÕES -->
+        <div class="dashboard-grid">
+            
+            <!-- Botão 1: Gerenciar Alunos -->
+            <a href="alunos.html" class="dashboard-card">
+                <h3>Gerenciar Alunos</h3>
+                <p>Cadastro, edição e consulta de informações dos alunos.</p>
+            </a>
+
+            <!-- Botão 2: Gerenciar Professores -->
+            <a href="professores.html" class="dashboard-card">
+                <h3>Gerenciar Professores</h3>
+                <p>Registro de docentes e atribuição de disciplinas.</p>
+            </a>
+
+            <!-- Botão 3: Gerenciar Turmas -->
+            <a href="turmas.html" class="dashboard-card">
+                <h3>Gerenciar Turmas</h3>
+                <p>Criação e organização das classes por ano letivo.</p>
+            </a>
+
+            <!-- Botão 4: Gerenciar Disciplinas -->
+            <a href="disciplinas.html" class="dashboard-card">
+                <h3>Gerenciar Disciplinas</h3>
+                <p>Cadastro de matérias, definição de carga horária e professores.</p>
+            </a>
+
+            <!-- Botão 5: Gerenciar Mensalidades -->
+            <a href="mensalidades.html" class="dashboard-card">
+                <h3>Gerenciar Mensalidades</h3>
+                <p>Lançamento de cobranças e controle de status de pagamento.</p>
+            </a>
+
+             <!-- Botão 6: Gerenciar Eventos -->
+            <a href="eventos.html" class="dashboard-card">
+                <h3>Gerenciar Eventos</h3>
+                <p>Publicação de comunicados e agendamento de eventos para a comunidade.</p>
+            </a>
+            
+            <!-- Botão 7: Gerenciar Usuários (Apenas Admin) -->
+            <a href="usuarios.html" class="dashboard-card">
+                <h3>Gerenciar Usuários</h3>
+                <p>Criação e gestão de contas de acesso (Admin, Secretário, etc.).</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Escola Exemplo</p>
+    </footer>
+</body>
+</html>
