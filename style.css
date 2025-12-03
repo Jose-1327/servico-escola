@@ -130,3 +130,19 @@ footer {
     font-size: 0.9em;
     margin-top: 40px;
 }
+
+/* Estilo específico para a tela de Login */
+.login-container {
+    max-width: 400px; /* Tamanho menor para a tela de login */
+    margin: 50px auto; /* Centraliza verticalmente e horizontalmente */
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 25px;
+}

@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola</title>
-    
+    <title>Login - Sistema Escolar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Referência ao arquivo JavaScript para lógica do frontend -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Sistema de Gestão Escolar</h1>
+        <nav>
+            <!-- A navegação é mantida, mas pode ser desativada/ocultada até o login ser realizado -->
+            <a href="index.html">Login</a>
+            <!-- Links ocultos ou para o Secretário/Admin -->
+            <!-- <a href="alunos.html">Alunos</a>
+            <a href="professores.html">Professores</a>
+            <a href="turmas.html">Turmas</a> -->
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <h2>Acesso ao Sistema</h2>
+        <form id="login-form" action="backend/login.php" method="POST">
+            <!-- Usuário/Email -->
+            <input type="text" name="usuario" placeholder="CPF, Matrícula ou Usuário" required>
+
+            <!-- Senha -->
+            <input type="password" name="senha" placeholder="Senha" required>
+
+            <button type="submit">Entrar</button>
+
+            <p style="text-align: center; margin-top: 20px; font-size: 0.9em;">
+                Esqueceu a senha? <a href="#" style="color: #0057b7; text-decoration: none;">Recuperar</a>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Escola Exemplo</p>
+    </footer>
 </body>
 </html>
